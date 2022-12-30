@@ -1,0 +1,35 @@
+{
+  "brand": {
+    "name": "Ashish Kumar"
+  },
+  "navs": [
+    {
+      "label": "Home",
+      "link": "/#home"
+    },
+    {
+      "label": "About",
+      "link": "/#about"
+    },
+    {
+      "label": "Skills",
+      "link": "/#skills"
+    },
+    {
+      "label": "Experiences",
+      "link": "/#experiences"
+    },
+    {
+      "label": "Projects",
+      "link": "/#projects"
+    },
+    {
+      "label": "Education",
+      "link": "/#education"
+    },
+    {
+      "label": "Blog",
+      "link": "/blog"
+    }
+  ]
+}

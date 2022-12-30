@@ -1,0 +1,61 @@
+@import "../mixins/section";
+
+.about {
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    @include section();
+
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__resume {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 600px;
+
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    &--contact {
+      font-size: 2rem;
+      margin-right: 50px;
+      margin-top: 15px;
+
+      a {
+        margin-right: 1em;
+        &:hover {
+          color: var(--contact-hover);
+        }
+      }
+    }
+
+    &--download {
+      margin: 3em 0 0;
+
+      a {
+        background-color: var(--download);
+        border-radius: 10px;
+        color: var(--download-text);
+        margin-right: 2em;
+        padding: 1em 1.5em;
+        &:hover {
+          background-color: var(--download-hover);
+        }
+      }
+    }
+  }
+
+  &__swot {
+    flex: 1;
+  }
+}

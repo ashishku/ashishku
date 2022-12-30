@@ -1,0 +1,32 @@
+<div class="about" id="about">
+    {{ with .Site.Data.about }}
+    <div class="about__container">
+        <div class="about__resume">
+            <h2>{{.name}}</h2>
+            <h3>{{.profile}}</h3>
+            <p>{{.objective}}</p>
+            <div class="about__resume--contact">
+                {{range .contact}}
+                <a href={{.link}} target="_blank">
+                    <i class={{.icon}}></i>
+                </a>
+                {{end}}
+            </div>
+            <div class="about__resume--download">
+                {{range .downloads}}
+                <a href={{.link}} target="_blank">
+                    {{.label}}
+                </a>
+                {{end}}
+            </div>
+        </div>
+        <div class="about__swot">
+            <div class="about__resume">
+                <h2>{{.name}}</h2>
+                <h3>{{.profile}}</h3>
+                <p>{{.objective}}</p>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>

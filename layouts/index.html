@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{- .Site.Title -}}</title>
+  {{ $siteDescription := .Site.Params.description }}
+  {{ if (index .Site.Data .Site.Language.Lang).site }}
+  {{ $siteConfig := (index .Site.Data .Site.Language.Lang).site }}
+  {{ if $siteConfig.description }}
+  {{ $siteDescription = $siteConfig.description }}
+  {{ end }}
+  {{ end }}
+  <meta name="description" content="{{ $siteDescription }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/edc8863cec.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" (not hugo.IsProduction)) }}
+  {{ $normalize := resources.Get "sass/normalize.scss" | resources.ToCSS $options | fingerprint }}
+  {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | fingerprint }}
+
+  <link rel="stylesheet" href="{{ $normalize.Permalink }}" integrity="{{ $normalize.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+  <div class="container">
+    <!--- NAVBAR ------------------------->
+    {{- partial "navigation/navbar.html" . -}}
+
+    <div class="content-wrapper">
+      <main class="content">
+        <!--- Home ------------------------->
+        {{- partial "sections/home.html" . -}}
+
+        <!--- About ------------------------->
+        {{- partial "sections/about.html" . -}}
+      </main>
+      <footer class="footer">Something</footer>
+    </div>
+  </div>
+  {{ $opts := dict "noComments" true "minified" (hugo.IsProduction) "sourceMap" (not hugo.IsProduction)}}
+  {{- $transpiled := resources.Get "js/navigation.js" | babel $opts -}}
+  <script src="{{ $transpiled.Permalink }}" integrity="{{ $transpiled.Data.Integrity }}" async defer></script>
+</body>
+
+</html>

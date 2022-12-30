@@ -1,3 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+[security]
+	[security.exec]
+		allow = ['^go$', '^npx$', '^postcss$', '^babel$']

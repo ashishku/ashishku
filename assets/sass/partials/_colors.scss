@@ -1,0 +1,33 @@
+$catskillWhite: #e5e9f2;
+$heather: #c0ccda;
+$oxfordBlue: #3c4858;
+$regentGray: #8392a5;
+$tePapaGreen: #1c3f41;
+$transparentBlack: rgba(0, 0, 0, 0.7);
+$transparentShadow: rgba(0, 0, 0, 0.24);
+
+:root {
+  --primary: #{$tePapaGreen};
+
+  --background: #{$catskillWhite};
+
+  --text: #{$oxfordBlue};
+
+  --nav-background: #{$transparentBlack};
+  --nav-background-inverted: #{lighten($catskillWhite, 10%)};
+  --nav-background-inverted-selected: #{$heather};
+  --nav-border: #{$catskillWhite};
+  --nav-border-inverted: #{$tePapaGreen};
+  --nav-box-shadow: #{$transparentShadow};
+  --nav-text: #{$heather};
+  --nav-text-inverted-selected: #{$tePapaGreen};
+  --nav-text-selected: #{$catskillWhite};
+
+  --contact-hover: #{lighten($tePapaGreen, 10%)};
+
+  --download: #{$oxfordBlue};
+  --download-hover: #{$tePapaGreen};
+  --download-text: #{$heather};
+
+  --footer-text: #{$regentGray};
+}

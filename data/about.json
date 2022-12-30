@@ -1,0 +1,53 @@
+{
+    "name": "Ashish Kumar",
+    "profile": "Software Engineer",
+    "objective": "I am a passionate software engineer with 15 years of working experience.",
+    "contact": [
+        {
+            "icon": "fa-solid fa-envelope",
+            "link": "mailto:ashish@ashishku.in"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "link": "https://www.github.com/ashishku"
+        },
+        {
+            "icon": "fa-brands fa-linkedin-in",
+            "link": "https://www.linkedin.com/in/ashish-kumar-22752a19/"
+        },
+        {
+            "icon": "fa-brands fa-twitter",
+            "link": "https://twitter.com/ashishkvarma"
+        },
+        {
+            "icon": "fa-brands fa-facebook-f",
+            "link": "https://www.facebook.com/social.ashish.kvarma"
+        },
+        {
+            "icon": "fa-brands fa-instagram",
+            "link": "https://www.instagram.com/ashish.kumar.varma"
+        },
+        {
+            "icon": "fa-brands fa-whatsapp",
+            "link": "https://api.whatsapp.com/send/?phone=919405577151"
+        },
+        {
+            "icon": "fa-brands fa-telegram",
+            "link": "https://t.me/ashishkvarma"
+        },
+        {
+            "icon": "fa-brands fa-skype",
+            "link": "https://join.skype.com/invite/YuP3PV5Eolvg"
+        }
+    ],
+    "downloads": [
+        {
+            "label": "Resume (.pdf)",
+            "link": "/downloads/resume.pdf"
+        },
+        {
+            "label": "Resume (.doc)",
+            "link": "/downloads/resume.docx"
+        }
+    ]
+}

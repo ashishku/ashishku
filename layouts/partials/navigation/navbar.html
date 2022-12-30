@@ -1,0 +1,23 @@
+<nav class="navigation">
+    {{ with .Site.Data.navigation }}
+    <div class="navigation__container">
+        <div class="navigation__brand">
+            <a href="/">{{.brand.name}}</a>
+        </div>
+
+        <div class="navigation__hamburger">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </div>
+
+        <div class="navigation__navs">
+            {{ range $index, $nav := .navs }}
+            {{ if .Identifier }} class="optional"{{ end }}
+            <a href={{$nav.link}} {{ if eq $index 0 }} class="selected" {{ end }}>
+                {{$nav.label}}
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</nav>

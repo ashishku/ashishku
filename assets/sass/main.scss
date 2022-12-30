@@ -1,0 +1,19 @@
+@import "./partials/colors";
+@import "./partials/vars";
+@import "./mixins/section";
+
+@import "./common.scss";
+@import "./navigation/navigation.scss";
+@import "./sections/home.scss";
+@import "./sections/about.scss";
+@import "./footer.scss";
+
+.container {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+
+  .content-wrapper {
+    height: 100vh;
+    width: 100vw;
+  }
+}

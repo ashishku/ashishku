@@ -1,0 +1,36 @@
+.home {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+
+  &__background {
+    background-attachment: fixed;
+    background-image: url("/images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+    height: 100%;
+    transform: scale(1.05);
+    width: 100%;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60%;
+    position: relative;
+    top: -65%;
+
+    .me {
+      background-color: #e7e7ef;
+      border-radius: 50%;
+      height: 148px;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 148px;
+    }
+  }
+}
