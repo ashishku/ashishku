@@ -1,6 +1,19 @@
 <div class="home" id="home">
+    {{ with .Site.Data.home }}
     <div class="home__background"></div>
     <div class="home__content">
-        <img class="me" src="/images/me.jpg"/>
+        <img class="home__content--me" src="/images/me.jpg" />
+        <h1 class="home__content--whoami">{{ .whoami }}</h1>
+
+        <div class="home__content--typing-carousal">
+            <span>{{.hobbies.prefix}}</span>
+            <span data-phrases={{.hobbies.phrases | jsonify | base64Encode}}></span>
+            <span class="blink">&#x275A;</span>
+        </div>
+
+        <a href="/#about" class="home__content--arrow">
+            <i class="fa-solid fa-angles-down"></i>
+        </a>
     </div>
+    {{ end }}
 </div>

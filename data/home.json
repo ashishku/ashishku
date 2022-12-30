@@ -1,0 +1,13 @@
+{
+    "whoami": "Hi, I am Ashish",
+    "hobbies": {
+        "prefix": "I",
+        "phrases": [
+            "am a Developer.",
+            "am an Amture Photographer.",
+            "am a DIY Enthusiast.",
+            "love Tinkering Electronics.",
+            "love building computers."
+        ]
+    }
+}

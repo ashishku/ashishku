@@ -58,8 +58,14 @@
     </div>
   </div>
   {{ $opts := dict "noComments" true "minified" (hugo.IsProduction) "sourceMap" (not hugo.IsProduction)}}
-  {{- $transpiled := resources.Get "js/navigation.js" | babel $opts -}}
-  <script src="{{ $transpiled.Permalink }}" integrity="{{ $transpiled.Data.Integrity }}" async defer></script>
+
+  {{- $carousal := resources.Get "js/TypingCarousal.js" | babel $opts -}}
+  {{- $navigation := resources.Get "js/navigation.js" | babel $opts -}}
+  {{- $home := resources.Get "js/home.js" | babel $opts -}}
+
+  <script src="{{ $carousal.Permalink }}" integrity="{{ $carousal.Data.Integrity }}" async defer></script>
+  <script src="{{ $navigation.Permalink }}" integrity="{{ $navigation.Data.Integrity }}" async defer></script>
+  <script src="{{ $home.Permalink }}" integrity="{{ $home.Data.Integrity }}" async defer></script>
 </body>
 
 </html>
