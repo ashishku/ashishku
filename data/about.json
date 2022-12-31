@@ -49,5 +49,37 @@
             "label": "Resume (.doc)",
             "link": "/downloads/resume.docx"
         }
+    ],
+    "swot": [
+        {
+            "label": "Team Work",
+            "value": 80,
+            "color": "cornflowerBlue"
+        },
+        {
+            "label": "Communication",
+            "value": 75,
+            "color": "ronchi"
+        },
+        {
+            "label": "Hard Working",
+            "value": 75,
+            "color": "lavenderMagenta"
+        },
+        {
+            "label": "Fast Learner",
+            "value": 90,
+            "color": "shamrock"
+        },
+        {
+            "label": "Problem Solving",
+            "value": 90,
+            "color": "robinsEggBlue"
+        },
+        {
+            "label": "Responsible",
+            "value": 80,
+            "color": "salmon"
+        }
     ]
 }

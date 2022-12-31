@@ -1,0 +1,49 @@
+.trait {
+  svg {
+    box-sizing: border-box;
+  }
+  .trait__label-container {
+    transform: translateY(0.25em);
+  }
+  .trait__label {
+    font-size: 1.5rem;
+    line-height: 1;
+    stroke: var(--trait-center);
+    text-anchor: middle;
+  }
+  &__value {
+    fill: transparent;
+
+    &.animate {
+      animation: svgDash 5s ease;
+    }
+  }
+
+  &__value--center {
+    fill: var(--tr);
+  }
+
+  &#{&}--cornflowerBlue {
+    stroke: var(--trait-cornflowerBlue);
+  }
+
+  &#{&}--lavenderMagenta {
+    stroke: var(--trait-lavenderMagenta);
+  }
+
+  &#{&}--robinsEggBlue {
+    stroke: var(--trait-robinsEggBlue);
+  }
+
+  &#{&}--ronchi {
+    stroke: var(--trait-ronchi);
+  }
+
+  &#{&}--salmon {
+    stroke: var(--trait-salmon);
+  }
+
+  &#{&}--shamrock {
+    stroke: var(--trait-shamrock);
+  }
+}

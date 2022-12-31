@@ -1,4 +1,11 @@
-window.onscroll = () => {
+window.addEventListener("scroll", throttle(onScroll, 500));
+
+window.addEventListener("load", () => {
+  selectNavigation();
+  toggleHamburger();
+});
+
+function onScroll() {
   const navSections = [];
   const navs = document.querySelectorAll(".navigation__navs a");
   Array.from(navs).forEach((nav) => {
@@ -14,12 +21,7 @@ window.onscroll = () => {
   });
   toggleInvertedNavigation();
   selectNavOnScroll(navSections);
-};
-
-window.onload = () => {
-  selectNavigation();
-  toggleHamburger();
-};
+}
 
 function toggleHamburger() {
   const navContainer = document.querySelector(".navigation__navs");

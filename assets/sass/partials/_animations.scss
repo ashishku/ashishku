@@ -23,3 +23,9 @@
     opacity: 1;
   }
 }
+
+@keyframes svgDash {
+  from {
+    stroke-dasharray: 1 0;
+  }
+}

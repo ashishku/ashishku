@@ -57,15 +57,23 @@
       <footer class="footer">Something</footer>
     </div>
   </div>
+
   {{ $opts := dict "noComments" true "minified" (hugo.IsProduction) "sourceMap" (not hugo.IsProduction)}}
 
+  {{- $throttle := resources.Get "js/throttle.js" | babel $opts -}}
   {{- $carousal := resources.Get "js/TypingCarousal.js" | babel $opts -}}
+
+  <script src="{{ $throttle.Permalink }}" integrity="{{ $throttle.Data.Integrity }}" async defer></script>
+  <script src="{{ $carousal.Permalink }}" integrity="{{ $carousal.Data.Integrity }}" async defer></script>
+
   {{- $navigation := resources.Get "js/navigation.js" | babel $opts -}}
   {{- $home := resources.Get "js/home.js" | babel $opts -}}
+  {{- $about := resources.Get "js/about.js" | babel $opts -}}
 
-  <script src="{{ $carousal.Permalink }}" integrity="{{ $carousal.Data.Integrity }}" async defer></script>
+
   <script src="{{ $navigation.Permalink }}" integrity="{{ $navigation.Data.Integrity }}" async defer></script>
   <script src="{{ $home.Permalink }}" integrity="{{ $home.Data.Integrity }}" async defer></script>
+  <script src="{{ $about.Permalink }}" integrity="{{ $about.Data.Integrity }}" async defer></script>
 </body>
 
 </html>

@@ -21,11 +21,19 @@
             </div>
         </div>
         <div class="about__swot">
-            <div class="about__resume">
-                <h2>{{.name}}</h2>
-                <h3>{{.profile}}</h3>
-                <p>{{.objective}}</p>
+            {{range .swot}}
+            <div class="trait trait--{{.color}}" data-value="{{.value}}">
+                <svg width="175" height="175">
+                    <circle class="trait__value" cx="50%" cy="50%" r="65" stroke-width="25" fill="transparent"></circle>
+                    <circle class="trait__value--center" cx="50%" cy="50%" r="65"></circle>
+                    <g class="trait__label-container">
+                        <text x="50%" y="50%" class="trait__label">
+                            {{.label}}
+                        </text>
+                    </g>
+                </svg>
             </div>
+            {{end}}
         </div>
     </div>
     {{ end }}

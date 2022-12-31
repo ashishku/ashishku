@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener("load", () => {
   try {
     const elem = document.querySelector(
       ".home__content--typing-carousal [data-phrases]"
@@ -16,4 +16,4 @@ window.onload = () => {
   } catch (error) {
     console.error(error);
   }
-};
+});

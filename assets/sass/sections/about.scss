@@ -18,7 +18,13 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    min-width: 600px;
+    margin-bottom: 2em;
+    width: 50%;
+
+    @media only screen and (max-width: 800px) {
+      margin-bottom: 4em;
+      min-width: 100%;
+    }
 
     h2,
     h3,
@@ -27,12 +33,14 @@
     }
 
     &--contact {
-      font-size: 2rem;
-      margin-right: 50px;
-      margin-top: 15px;
+      margin-right: 2.5em;
+      margin-top: .75em;
 
       a {
+        font-size: 2.5rem;
+        line-height: 2.5em;
         margin-right: 1em;
+        
         &:hover {
           color: var(--contact-hover);
         }
@@ -40,7 +48,14 @@
     }
 
     &--download {
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
       margin: 3em 0 0;
+
+      @media only screen and (max-width: 800px) {
+        justify-content: center;
+      }
 
       a {
         background-color: var(--download);
@@ -56,6 +71,10 @@
   }
 
   &__swot {
+    align-items: center;
+    display: flex;
     flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

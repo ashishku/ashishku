@@ -6,6 +6,13 @@ $tePapaGreen: #1c3f41;
 $transparentBlack: rgba(0, 0, 0, 0.7);
 $transparentShadow: rgba(0, 0, 0, 0.24);
 
+$cornflowerBlue: #6195ed;
+$lavenderMagenta: #ed63d2;
+$robinsEggBlue: #00c9e3;
+$ronchi: #eebb4d;
+$salmon: #ff7c7c;
+$shamrock: #2dca73;
+
 :root {
   --primary: #{$tePapaGreen};
 
@@ -31,6 +38,14 @@ $transparentShadow: rgba(0, 0, 0, 0.24);
   --download: #{$oxfordBlue};
   --download-hover: #{$tePapaGreen};
   --download-text: #{$heather};
+
+  --trait-cornflowerBlue: #{$cornflowerBlue};
+  --trait-lavenderMagenta: #{$lavenderMagenta};
+  --trait-robinsEggBlue: #{$robinsEggBlue};
+  --trait-ronchi: #{$ronchi};
+  --trait-salmon: #{$salmon};
+  --trait-shamrock: #{$shamrock};
+  --trait-center: #{$catskillWhite}; 
 
   --footer-text: #{$regentGray};
 }
