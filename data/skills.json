@@ -1,0 +1,65 @@
+{
+    "sectionTitle": "Skills",
+    "skills": [
+        {
+            "image": "JavaScript.png",
+            "title": "JavaScript",
+            "details": "10 + years of experience in development with JavaScript, worked with multiple frameworks such as React, angular, backbone and knockout."
+        },
+        {
+            "image": "typescript.png",
+            "title": "TypeScript",
+            "details": "4 year of experience with building web applications with TypeScript."
+        },
+        {
+            "image": "React.png",
+            "title": "React JS",
+            "details": "Experience with React and React Native(Expo)"
+        },
+        {
+            "image": "node.png",
+            "title": "Node JS",
+            "details": "7 + years of experience with development in node js using custom frameworks"
+        },
+        {
+            "image": "AngularJS.png",
+            "title": "Angular JS",
+            "details": "2+ year of experience with Angular JS 1.5"
+        },
+        {
+            "image": "linux.png",
+            "title": "Linux",
+            "details": "Using as the main operating system. Capable of writing bash/shell scripts."
+        },
+        {
+            "image": "git.png",
+            "title": "Git",
+            "details": "Experienced with git-based development. Worked with Github, Gitlab, Gerit and GitTea"
+        },
+        {
+            "image": "docker.png",
+            "title": "Docker",
+            "details": "3 years experience with docker and docker swarm"
+        },
+        {
+            "image": "hugo.png",
+            "title": "Hugo",
+            "details": "Experience in building static sties using hugo"
+        },
+        {
+            "image": "perl.png",
+            "title": "Perl",
+            "details": "7+ years of experience with Perl building web apps and web crawling"
+        },
+        {
+            "image": "python.png",
+            "title": "Python",
+            "details": "Experience with python2 and python3"
+        },
+        {
+            "image": "iata.png",
+            "title": "Travel and Hospitality",
+            "details": "7 + years of experience in Travel and Hospitality. Done certification for IATA/UFTAA Travel and Tourism Training Programme – Consultant"
+        }
+    ]
+}

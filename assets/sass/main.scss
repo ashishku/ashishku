@@ -3,11 +3,14 @@
 @import "./partials/animations";
 @import "./mixins/section";
 
+@import "./modules/card.scss";
+@import "./modules/trait.scss";
+
 @import "./common.scss";
-@import "./trait.scss";
 @import "./navigation/navigation.scss";
 @import "./sections/home.scss";
 @import "./sections/about.scss";
+@import "./sections/skills.scss";
 @import "./footer.scss";
 
 .container {

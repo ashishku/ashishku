@@ -7,11 +7,6 @@
 
   &__container {
     @include section();
-
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
   }
 
   &__resume {

@@ -16,11 +16,13 @@ $shamrock: #2dca73;
 :root {
   --primary: #{$tePapaGreen};
 
-  --background: #{$catskillWhite};
+  --background: #{$heather};
+  --background2: #{$catskillWhite};
 
   --text: #{$oxfordBlue};
 
   --nav-background: #{$transparentBlack};
+  --nav-background-expand: #{$catskillWhite};
   --nav-background-inverted: #{lighten($catskillWhite, 10%)};
   --nav-background-inverted-selected: #{$heather};
   --nav-border: #{$catskillWhite};
@@ -45,7 +47,11 @@ $shamrock: #2dca73;
   --trait-ronchi: #{$ronchi};
   --trait-salmon: #{$salmon};
   --trait-shamrock: #{$shamrock};
-  --trait-center: #{$catskillWhite}; 
+  --trait-center: #{$catskillWhite};
+
+  --card-body-color: #{lighten($catskillWhite, 3%)};
+  --card-head-color: #{darken($catskillWhite, 3%)};
+  --card-box-shadow: #{$transparentBlack};
 
   --footer-text: #{$regentGray};
 }

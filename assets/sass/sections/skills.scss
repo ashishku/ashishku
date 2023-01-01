@@ -1,0 +1,16 @@
+.skills {
+  background-color: var(--background2);
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    @include section();
+
+    .skill_cards {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
