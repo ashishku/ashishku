@@ -2,13 +2,15 @@
   const TypingCarousal = function TypingCarousal({
     elem,
     phrases,
+    holdingTime,
     typingDelay,
     rotatingDelay,
   }) {
     this.elem = elem;
     this.phrases = phrases;
-    this.typingDelay = typingDelay;
-    this.rotatingDelay = rotatingDelay;
+    this.holdingTime = holdingTime || 1000;
+    this.typingDelay = typingDelay || 200;
+    this.rotatingDelay = rotatingDelay || 1500;
 
     this.currentIndex = 0;
     this.isTyping = false;
@@ -16,13 +18,17 @@
 
   TypingCarousal.prototype.type = function (phrase, currentText, isDeleting) {
     this.isTyping = true;
+    let holding = false;
 
     if (isDeleting) {
       currentText = phrase.substring(0, currentText.length - 1);
       this.isTyping = !!currentText.length;
     } else {
       currentText = phrase.substring(0, currentText.length + 1);
-      isDeleting = phrase.length === currentText.length;
+      if (phrase.length === currentText.length) {
+        holding = true;
+        isDeleting = true;
+      }
     }
 
     this.elem.innerText = currentText;
@@ -30,7 +36,7 @@
     if (this.isTyping) {
       setTimeout(() => {
         this.type(phrase, currentText, isDeleting);
-      }, this.typingDelay);
+      }, holding ? this.holdingTime : this.typingDelay);
     }
   };
 

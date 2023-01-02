@@ -8,8 +8,9 @@ window.addEventListener("load", () => {
     const carousal = new TypingCarousal({
       elem,
       phrases,
+      holdingTime: 1000,
       typingDelay: 200,
-      rotatingDelay: 2000,
+      rotatingDelay: 1500,
     });
 
     carousal.rotate(true);
