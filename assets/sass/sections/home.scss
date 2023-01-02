@@ -40,6 +40,10 @@
     &--typing-carousal {
       color: var(--home-text);
       font-size: 2rem;
+
+      .blink {
+        animation: blink .5s ease-in infinite;
+      } 
     }
 
     &--arrow {
