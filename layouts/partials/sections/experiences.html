@@ -1,0 +1,68 @@
+<div class="experiences" id="experiences">
+    {{ with .Site.Data.experiences }}
+    <div class="experiences__container">
+        <h1>{{.sectionTitle}}</h1>
+        <section class="experience">
+            {{ range $index, $expereince := .experiences }}
+
+            <article class="experience__company">
+                <div class="experience__company__content">
+                    <div class="div"><span>{{add 1 $index}}</span></div>
+                    {{ if .multipleProjects }}
+                    <div  class="div">
+                        {{if .link}}
+                        <h3 class="experience__company--name"><a href="{{.link}}" target="_blank">{{.company}}</a></h3>
+                        {{else}}
+                        <h3 class="experience__company--name">{{.company}}</h3>
+                        {{end}}
+                        <p>
+                            <span>{{.duration}}</span>,
+                            <span>{{.location}}</span>
+                        </p>
+                        <p>
+                            {{.details | safeHTML}}
+                        </p>
+                        {{range .projects}}
+                        <h3>{{.jobTitle}}</h3>
+                        <p>
+                            <span>{{.duration}}</span>
+                        </p>
+                        <p>
+                            {{.details | safeHTML}}
+                        </p>
+                        {{end}}
+                    </div>
+                    {{ else }}
+                    <div  class="div">
+                        <h3>{{.jobTitle}}</h3>
+                        <div class="experience__company--duration">
+                            {{if .link}}
+                            <h4 class="experience__company--name">
+                                <a href="{{.link}}" target="_blank">
+                                    {{.company}}
+                                </a>
+                            </h4>
+                            {{else}}
+                            <h4>{{.company}}</h4>
+                            {{end}}
+                            <br />
+                            <span>{{.duration}}</span>,
+                            <span>{{.location}}</span>
+                        </div>
+                        <p>
+                            {{.details | safeHTML}}
+                        </p>
+                    </div>
+                    {{end}}
+                    <div class="div"></div>
+                </div>
+                <div class="experience__company__divider">
+                    <div class="div"></div>
+                    <div class="div"></div>
+                    <div class="div"></div>
+                </div>
+            </article>
+            {{ end }}
+        </section>
+        {{ end }}
+    </div>

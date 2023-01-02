@@ -1,0 +1,30 @@
+.experiences {
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    @include section();
+
+    .experience {
+      display: flex;
+      flex-direction: column;
+
+      &__company--duration {
+        padding: 0;
+      }
+
+      &__company--name {
+        color: var(--experience-company-text);
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      h4 {
+        margin: .25em;
+        margin-left: 0;
+      }
+    }
+  }
+}

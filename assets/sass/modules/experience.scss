@@ -1,0 +1,87 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+
+  &__company {
+    $self: &;
+
+    &__content,
+    &__divider {
+      display: flex;
+
+      & .div:nth-child(odd) {
+        flex: 1;
+        max-width: 75px;
+        min-width: 75px;
+      }
+
+      & .div:nth-child(even) {
+        flex-grow: 1;
+      }
+    }
+
+    &__content {
+      @include circle();
+
+      z-index: 10;
+
+      #{$self}:nth-child(even) & {
+        flex-direction: row-reverse;
+      }
+
+      & .div:nth-child(2) {
+        padding: 0.75em;
+      }
+
+      #{$self}:nth-child(odd) & {
+        @include line(left);
+      }
+      #{$self}:nth-child(even) & {
+        @include line(right);
+      }
+    }
+    &__divider {
+      min-height: $experienceDividerHeight;
+      z-index: 1;
+
+      & .div:nth-child(even) {
+        position: relative;
+        &::after {
+          background-color: var(--primary);
+          content: " ";
+          height: 3px;
+          padding: 0;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+        }
+      }
+
+      #{$self}:nth-child(odd) & {
+        @include curve(1, left, top);
+        @include curve(3, right, bottom);
+      }
+      #{$self}:nth-child(even) & {
+        @include curve(1, left, bottom);
+        @include curve(3, right, top);
+      }
+
+      #{$self}:nth-child(even)#{$self}:last-child & {
+        .div:nth-child(1),
+        .div:nth-child(2) {
+            &::after {
+                border-color: transparent;
+            }
+        }
+      }
+      #{$self}:nth-child(odd)#{$self}:last-child & {
+        .div:nth-child(2),
+        .div:nth-child(3) {
+            &::after {
+                border-color: transparent;
+            }
+        }
+      }
+    }
+  }
+}

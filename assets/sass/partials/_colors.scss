@@ -1,7 +1,8 @@
+$axolotl: #466d49;
 $catskillWhite: #e5e9f2;
-$heather: #c0ccda;
 $oxfordBlue: #3c4858;
 $regentGray: #8392a5;
+$selago: #f6f9fe;
 $tePapaGreen: #1c3f41;
 $transparentBlack: rgba(0, 0, 0, 0.7);
 $transparentShadow: rgba(0, 0, 0, 0.24);
@@ -16,7 +17,7 @@ $shamrock: #2dca73;
 :root {
   --primary: #{$tePapaGreen};
 
-  --background: #{$heather};
+  --background: #{$selago};
   --background2: #{$catskillWhite};
 
   --text: #{$oxfordBlue};
@@ -24,11 +25,11 @@ $shamrock: #2dca73;
   --nav-background: #{$transparentBlack};
   --nav-background-expand: #{$catskillWhite};
   --nav-background-inverted: #{lighten($catskillWhite, 10%)};
-  --nav-background-inverted-selected: #{$heather};
+  --nav-background-inverted-selected: #{$selago};
   --nav-border: #{$catskillWhite};
   --nav-border-inverted: #{$tePapaGreen};
   --nav-box-shadow: #{$transparentShadow};
-  --nav-text: #{$heather};
+  --nav-text: #{$selago};
   --nav-text-inverted-selected: #{$tePapaGreen};
   --nav-text-selected: #{$catskillWhite};
 
@@ -39,7 +40,7 @@ $shamrock: #2dca73;
 
   --download: #{$oxfordBlue};
   --download-hover: #{$tePapaGreen};
-  --download-text: #{$heather};
+  --download-text: #{$selago};
 
   --trait-cornflowerBlue: #{$cornflowerBlue};
   --trait-lavenderMagenta: #{$lavenderMagenta};
@@ -52,6 +53,9 @@ $shamrock: #2dca73;
   --card-body-color: #{lighten($catskillWhite, 3%)};
   --card-head-color: #{darken($catskillWhite, 3%)};
   --card-box-shadow: #{$transparentBlack};
+
+  --experience-circle-text: #{$catskillWhite};
+  --experience-company-text: #{$axolotl};
 
   --footer-text: #{$regentGray};
 }

@@ -2,8 +2,10 @@
 @import "./partials/vars";
 @import "./partials/animations";
 @import "./mixins/section";
+@import "./mixins/experience";
 
 @import "./modules/card.scss";
+@import "./modules/experience.scss";
 @import "./modules/trait.scss";
 
 @import "./common.scss";
@@ -11,6 +13,7 @@
 @import "./sections/home.scss";
 @import "./sections/about.scss";
 @import "./sections/skills.scss";
+@import "./sections/experiences.scss";
 @import "./footer.scss";
 
 .container {

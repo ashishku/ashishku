@@ -1,0 +1,84 @@
+{
+  "sectionTitle": "Experiences",
+  "experiences": [
+    {
+      "jobTitle": "Tech Lead",
+      "company": "Tarana Wireless",
+      "link": "https://www.taranawireless.com/",
+      "duration": "July 2021 - ",
+      "location": "Remote",
+      "details": "Place holder",
+      "multipleProjects": false
+    },
+    {
+      "jobTitle": "Principal Consultant",
+      "company": "Sincro, an Ansira company",
+      "link": "https://www.sincrodigital.com/",
+      "duration": "Sep 2020 - June 2021",
+      "location": "Pune",
+      "details": "Digital Marketing Business Unit of CDK Global, sold to Ansira.<br/>Responsibilities:<ul><li>Part of CMS team for the NextGen platform</li><li>Lead, guide and mentor the team of 4 on JavaScript/NodeJS</li><li>Coordinate with the onshore team on requirements and deployments</li></ul>",
+      "multipleProjects": false
+    },
+    {
+      "jobTitle": "Principal Consultant",
+      "company": "CDK Global",
+      "link": "https://www.cdkglobal.com/",
+      "duration": "Sep 2016 - Aug 2020",
+      "location": "Pune",
+      "details": "CDK provides integrated technology solutions to approximately 30,000 Auto, Truck, Motorcycle, Marine, Recreational and Heavy Equipment dealers around the world.<br/>Responsibilities:<ul><li>Part of CMS team for the NextGen platform</li><li>Lead, guide and mentor the team of 4 on JavaScript/NodeJS</li><li>Coordinate with the onshore team on requirements and deployments</li></ul>",
+      "multipleProjects": false
+    },
+    {
+      "jobTitle": "Freelance Consultant",
+      "company": "MIOTWEB Technologies",
+      "link": "https://miotweb.com/",
+      "duration": "Sep 2014 - June 2021",
+      "location": "Pune",
+      "details": "MIOTWEB Technologies Pvt. Ltd. & Headway Techies are privately held IT Solution Provider Companies formed in 2014.<br/>Responsibilities:<ul><li>Train, guide and mentor teams on Javascript, Perl and related technologies</li><li>Help teams with designs and reviews</li></ul>",
+      "multipleProjects": false
+    },
+    {
+      "jobTitle": "Corporate Trainer",
+      "company": "Freelance Trainer",
+      "duration": "2012 - 2018",
+      "location": "Pune",
+      "details": "As a freelance trainer, I have taken various training on JavaScript, Perl and related training. Below are the few of the training I have conducted.<br/>Training:<ul><li>Headway Techies</li><ul><li>JavaScript</li><li>TypeScript</li><li>AngularJS 1.5</li><li>React JS</li><li>React Native</li><li>Basics of Perl</li></ul><li>EduRamp Learning Services Pvt. Ltd.</li><ul><li>JavaScript</li><li>JQuery</li></ul><li>InnoServ Solutions Pvt. Ltd</li><ul><li>JavaScript</li><li>NodeJS</li><li>AngularJS 1.5</li><li>ExpressJS</li></ul></ul>",
+      "multipleProjects": false
+    },
+    {
+      "company": "Cybage Software Pvt. Ltd.",
+      "link": "https://www.cybage.com/",
+      "duration": "Feb 2006 - Sep 2016",
+      "location": "Pune",
+      "details": "Cybage Software is a technology consulting organization specializing in outsourced product engineering services.",
+      "multipleProjects": true,
+      "projects": [
+        {
+          "jobTitle": "Technical Architect",
+          "duration": "Apr 2012 - Sep 2016",
+          "details": "<ul><li>Technical Hierarchy - Guide and mentor a team of JavaScript and Perl resources to harvest and share knowledge across</li><li>Cybage.</li><li>Estimation and Proposals for existing clients and prospects.</li><li>Help teams with system designs.</li><li>Help teams with web performance.</li><li>Interviews for lateral hires and campus.</li><li>Training on upcoming technologies and project requirements</li></ul>"
+        },
+        {
+          "jobTitle": "Project Manager",
+          "duration": "Oct 2010 - Apr 2012",
+          "details": "<ul><li>On-time delivery of projects.</li><li>Lead and manage 3 teams of total size 22.</li><li>Act as Scrum Master.</li><li>Review Code, Design and Test case.</li><li>Appraisal of the team.</li></ul>"
+        },
+        {
+          "jobTitle": "System Analyst",
+          "duration": "Apr 2009 - Oct 2010",
+          "details": "<ul><li>Lead and manage the development activities of a team of 8 developers.</li><li>Involved in Requirement Understanding, design and review process.</li><li>Client interaction for the development process and periodic updates.</li></ul>"
+        },
+        {
+          "jobTitle": "Sr. Software Engineer",
+          "duration": "Apr 2007 - Apr 2009",
+          "details": "<ul><li>Lead and manage the development activities of a team of 6 developers.</li><li>Requirement Understanding</li><li>Design</li><li>Code review</li><li>Development process</li></ul>"
+        },
+        {
+          "jobTitle": "Software Engineer",
+          "duration": "Feb 2006 - Mar 2007",
+          "details": "<ul><li>Requirement Understanding</li><li>Code review</li><li>Development process</li></ul>"
+        }
+      ]
+    }
+  ]
+}
