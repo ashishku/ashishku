@@ -1,0 +1,14 @@
+<div class="copy">
+    {{with .Site.Data.footer}}
+    <div class="author">
+        {{.author}}
+    </div>
+    <div class="copyright">
+        {{.copyright}}
+    </div>
+    <div class="hugo">
+        <span>{{.hugo}} &nbsp;</span>
+        <img src="/images/footer/{{.hugoLogo}}" />
+    </div>
+    {{end}}
+</div>

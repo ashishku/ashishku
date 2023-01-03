@@ -1,0 +1,10 @@
+<h3>{{.Site.Data.footer.navigationTitle}}</h3>
+{{with .Site.Data.navigation}}
+<ul>
+    {{range .navs}}
+    <li>
+        <a href="{{.link}}">{{.label}}</a>
+    </li>
+    {{end}}
+</ul>
+{{end}}

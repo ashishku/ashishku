@@ -1,4 +1,47 @@
 .footer {
   background-color: var(--primary);
   color: var(--footer-text);
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__content {
+    @include section();
+
+    &--navigation {
+      ul,li {
+        list-style: none;
+        padding: .25em 0;
+      } 
+    }
+  }
+
+  &__copy {
+    .copy {
+      align-items: center;
+      border-top: var(--footer-border) solid 1px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 1em;
+
+      div {
+        padding: 0.5em;
+      }
+
+      .hugo {
+        align-items: center;
+        display: flex;
+
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
 }
