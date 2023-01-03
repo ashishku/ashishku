@@ -1,0 +1,17 @@
+{{with .Site.Data.footer.contacts}}
+<h2>{{.title}}:</h2>
+{{range .contactGroup}}
+<ul class="contact--type">
+    <li>
+        {{.contactLabel}}:
+        <ul class="contact">
+            {{range .contact}}
+            <li>
+                <a href="{{.link}}">{{.value}}</a>
+            </li>
+            {{end}}
+        </ul>
+    </li>
+</ul>
+{{end}}
+{{end}}

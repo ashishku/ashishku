@@ -1,7 +1,38 @@
 {
     "navigationTitle": "Navigation",
-    "author" : "Ashish Kumar",
+    "author": "Ashish Kumar",
     "copyright": "© 2022 Copyright.",
     "hugo": "Powered by",
-    "hugoLogo": "hugo.svg"
+    "hugoLogo": "hugo.svg",
+    "contacts": {
+        "title": "Contact me",
+        "contactGroup": [
+            {
+                "contactLabel": "Email",
+                "contact": [
+                    {
+                        "value": "ashish@ashishku.in",
+                        "link": "mailto:ashish@ashishku.in"
+                    },
+                    {
+                        "value": "ashish@ashishku.co.in",
+                        "link": "mailto:ashish@ashishku.co.in"
+                    },
+                    {
+                        "value": "varma.ashishkumar@gmail.com",
+                        "link": "mailto:varma.ashishkumar@gmail.com"
+                    }
+                ]
+            },
+            {
+                "contactLabel": "Phone",
+                "contact": [
+                    {
+                        "value": "+919405577151",
+                        "link": "tel:+919405577151"
+                    }
+                ]
+            }
+        ]
+    }
 }

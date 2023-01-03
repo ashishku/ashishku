@@ -13,11 +13,29 @@
   &__content {
     @include section();
 
-    &--navigation {
-      ul,li {
+    &--navigation,
+    &--contact {
+      width: 50%;
+
+      ul,
+      li {
         list-style: none;
-        padding: .25em 0;
-      } 
+        padding: 0.25em 0;
+      }
+    }
+
+    &--contact {
+      .contact {
+        padding: 0 2.5em;
+
+        a {
+          &:hover {
+            color: var(--footer-contact-hover);
+            margin-left: 0.5em;
+            transition: all 0.3s ease-out;
+          }
+        }
+      }
     }
   }
 

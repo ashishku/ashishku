@@ -36,7 +36,7 @@ $shamrock: #2dca73;
   --home-border: #{$catskillWhite};
   --home-text: #{$catskillWhite};
 
-  --contact-hover: #{lighten($tePapaGreen, 10%)};
+  --contact-hover: #{lighten(saturate($tePapaGreen, 100%), 10%)};
 
   --download: #{$oxfordBlue};
   --download-hover: #{$tePapaGreen};
@@ -57,6 +57,7 @@ $shamrock: #2dca73;
   --experience-circle-text: #{$catskillWhite};
   --experience-company-text: #{$axolotl};
 
-  --footer-text: #{$regentGray};
   --footer-border: #{$regentGray};
+  --footer-contact-hover: #{lighten(saturate($tePapaGreen, 100%), 10%)};
+  --footer-text: #{lighten($regentGray, 7%)};
 }
