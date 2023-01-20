@@ -1,0 +1,33 @@
+<div class="projects" id="projects">
+  {{with .Site.Data.projects}}
+  <div class="projects--title">
+    <h1>{{.sectionTitle}}</h1>
+  </div>
+  <div class="projects__container">
+    <div class="projects__selector">
+      {{range .company}}
+      <span data-type="{{.filter}}">{{.name}}</span>
+      {{end}}
+    </div>
+    <section class="projects__card">
+      {{range .projects}}
+      <article class="project" {{range .tags}} data-{{.}} {{end}}>
+        <div class="project--head">
+          <h3 class="project__card--project-name">{{.name}}</h3>
+          <div>
+            <span class="project--role">{{.role}}</span>
+            <span class="project--timeline">{{.timeline}}</span>
+          </div>
+        </div>
+        <div class="project--body">
+          <p>{{.summary}}</p>
+          {{if isset . "link"}}
+          <a href="{{.link}}" target="_blank">Details</a>
+          {{end}}
+        </div>
+      </article>
+      {{end}}
+    </section>
+  </div>
+  {{end}}
+</div>

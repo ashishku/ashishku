@@ -4,84 +4,128 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{- .Site.Title -}}</title>
+    {{ $siteDescription := .Site.Params.description }} {{ if (index .Site.Data
+    .Site.Language.Lang).site }} {{ $siteConfig := (index .Site.Data
+    .Site.Language.Lang).site }} {{ if $siteConfig.description }} {{
+    $siteDescription = $siteConfig.description }} {{ end }} {{ end }}
+    <meta name="description" content="{{ $siteDescription }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{- .Site.Title -}}</title>
-  {{ $siteDescription := .Site.Params.description }}
-  {{ if (index .Site.Data .Site.Language.Lang).site }}
-  {{ $siteConfig := (index .Site.Data .Site.Language.Lang).site }}
-  {{ if $siteConfig.description }}
-  {{ $siteDescription = $siteConfig.description }}
-  {{ end }}
-  {{ end }}
-  <meta name="description" content="{{ $siteDescription }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,500&display=swap"
-    rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/edc8863cec.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/edc8863cec.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
 
-  <link rel="icon" type="image/png" href="/images/favicon.png" />
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed"
+    "enableSourceMap" (not hugo.IsProduction)) }} {{ $normalize := resources.Get
+    "sass/normalize.scss" | resources.ToCSS $options | fingerprint }} {{ $style
+    := resources.Get "sass/main.scss" | resources.ToCSS $options | fingerprint
+    }}
 
-  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" (not hugo.IsProduction)) }}
-  {{ $normalize := resources.Get "sass/normalize.scss" | resources.ToCSS $options | fingerprint }}
-  {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | fingerprint }}
+    <link
+      rel="stylesheet"
+      href="{{ $normalize.Permalink }}"
+      integrity="{{ $normalize.Data.Integrity }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ $style.Permalink }}"
+      integrity="{{ $style.Data.Integrity }}"
+    />
+  </head>
 
-  <link rel="stylesheet" href="{{ $normalize.Permalink }}" integrity="{{ $normalize.Data.Integrity }}">
-  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
 
-</head>
+    <div class="container">
+      <!--- NAVBAR ------------------------->
+      {{- partial "navigation/navbar.html" . -}}
 
-<body>
-  <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <div class="content-wrapper">
+        <main class="content">
+          <!--- Home ------------------------->
+          {{- partial "sections/home.html" . -}}
 
-  <div class="container">
-    <!--- NAVBAR ------------------------->
-    {{- partial "navigation/navbar.html" . -}}
+          <!--- About ------------------------->
+          {{- partial "sections/about.html" . -}}
 
-    <div class="content-wrapper">
-      <main class="content">
-        <!--- Home ------------------------->
-        {{- partial "sections/home.html" . -}}
+          <!--- Skills ------------------------->
+          {{- partial "sections/skills.html" . -}}
 
-        <!--- About ------------------------->
-        {{- partial "sections/about.html" . -}}
+          <!--- Experiences ------------------------->
+          {{- partial "sections/experiences.html" . -}}
 
-        <!--- Skills ------------------------->
-        {{- partial "sections/skills.html" . -}}
-
-        <!--- Experiences ------------------------->
-        {{- partial "sections/experiences.html" . -}}
-      </main>
-      <footer class="footer">
-        {{- partial "footer.html" . -}}
-      </footer>
+          <!--- Projects ------------------------->
+          {{- partial "sections/projects.html" . -}}
+        </main>
+        <footer class="footer">{{- partial "footer.html" . -}}</footer>
+      </div>
     </div>
-  </div>
 
-  {{ $opts := dict "noComments" true "minified" (hugo.IsProduction) "sourceMap" (not hugo.IsProduction)}}
+    {{ $opts := dict "noComments" true "minified" (hugo.IsProduction)
+    "sourceMap" (not hugo.IsProduction)}} {{- $throttle := resources.Get
+    "js/throttle.js" | babel $opts -}} {{- $carousal := resources.Get
+    "js/TypingCarousal.js" | babel $opts -}}
 
-  {{- $throttle := resources.Get "js/throttle.js" | babel $opts -}}
-  {{- $carousal := resources.Get "js/TypingCarousal.js" | babel $opts -}}
+    <script
+      src="{{ $throttle.Permalink }}"
+      integrity="{{ $throttle.Data.Integrity }}"
+      async
+      defer
+    ></script>
+    <script
+      src="{{ $carousal.Permalink }}"
+      integrity="{{ $carousal.Data.Integrity }}"
+      async
+      defer
+    ></script>
 
-  <script src="{{ $throttle.Permalink }}" integrity="{{ $throttle.Data.Integrity }}" async defer></script>
-  <script src="{{ $carousal.Permalink }}" integrity="{{ $carousal.Data.Integrity }}" async defer></script>
+    {{- $navigation := resources.Get "js/navigation.js" | babel $opts -}} 
+    {{- $home := resources.Get "js/home.js" | babel $opts -}}
+    {{- $about := resources.Get "js/about.js" | babel $opts -}}
+    {{- $projects := resources.Get "js/projects.js" | babel $opts -}}
 
-  {{- $navigation := resources.Get "js/navigation.js" | babel $opts -}}
-  {{- $home := resources.Get "js/home.js" | babel $opts -}}
-  {{- $about := resources.Get "js/about.js" | babel $opts -}}
-
-
-  <script src="{{ $navigation.Permalink }}" integrity="{{ $navigation.Data.Integrity }}" async defer></script>
-  <script src="{{ $home.Permalink }}" integrity="{{ $home.Data.Integrity }}" async defer></script>
-  <script src="{{ $about.Permalink }}" integrity="{{ $about.Data.Integrity }}" async defer></script>
-</body>
-
+    <script
+      src="{{ $navigation.Permalink }}"
+      integrity="{{ $navigation.Data.Integrity }}"
+      async
+      defer
+    ></script>
+    <script
+      src="{{ $home.Permalink }}"
+      integrity="{{ $home.Data.Integrity }}"
+      async
+      defer
+    ></script>
+    <script
+      src="{{ $about.Permalink }}"
+      integrity="{{ $about.Data.Integrity }}"
+      async
+      defer
+    ></script>
+    <script
+      src="{{ $projects.Permalink }}"
+      integrity="{{ $projects.Data.Integrity }}"
+      async
+      defer
+    ></script>
+  </body>
 </html>
