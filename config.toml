@@ -1,7 +1,6 @@
-baseURL = 'http://ashishku.in/'
 languageCode = 'en-us'
 title = 'Ashish Kumar'
 
 [security]
-	[security.exec]
-		allow = ['^go$', '^npx$', '^postcss$', '^babel$']
+  [security.exec]
+    allow = ['^go$', '^npx$', '^postcss$', '^babel$']
