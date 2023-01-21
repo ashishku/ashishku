@@ -89,6 +89,8 @@
 
       .card__head {
         background-color: var(--project-card-header);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         color: var(--project-card-text);
         flex-direction: column;
 

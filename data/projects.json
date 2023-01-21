@@ -60,8 +60,8 @@
       "name": "NextGen Config",
       "role": "Project Lead",
       "timeline": ["Sep 2016 - Jun 2021"],
-      "summary": "NextGen is the next generation websites platform for CDK global based on nodejs. Config team builds tools for the platform which help end users build their websites",
-      "responsibility": "",
+      "summary": "NextGen is the next-generation website platform for CDK global based on nodejs. Config team builds tools for the platform which help end users build their websites.",
+      "responsibility": "Worked on replacing existing wizard-like CMS application with a single-page application using CDK's internal CO framework. Latter worked on redesigning CMS to be inline editable CMS using react portals.",
       "techStack": ["NodeJs", "React", "Redux", "Less", "React Portals"]
     },
     {
@@ -95,27 +95,27 @@
       "name": "Cybage Technology Group",
       "role": "Technical Architect",
       "timeline": ["May 2012 - Sep 2016"],
-      "summary": "Group of architects manage technical hierarchy to guide and mentor a virtual team of developers.",
+      "summary": "A group of architects managing technical hierarchy to guide and mentor a virtual team of developers.",
       "tags": ["all", "cybage"],
-      "responsibility": "",
+      "responsibility": "I was part of the open source and frontend group and helped my hierarchy, which had people from multiple projects, with technical issues in these technologies. I was also responsible for creating and leading training programs on these technologies.",
       "techStack": ["Perl", "Python", "Ruby", "FrontEnd"]
     },
     {
       "name": "MIS",
       "role": "Technical Architect",
       "timeline": ["Sep 2014 - Sep 2016"],
-      "summary": "Migrate existing internal MIS application to the new technology stack.",
+      "summary": "Cybage MIS is Cybage's internal MIS application which includes multiple applications such as Leave admin, timesheet, and risk management.",
       "tags": ["all", "cybage"],
-      "responsibility": "",
+      "responsibility": "The original application only worked on IE, which was an issue for mac and Linux users.  Initially I created chrome extension to make it work on Chome. Latter helped the team to migrate the system to a nodejs and angularjs application",
       "techStack": ["NodeJs", "TypeScript", "AngularJS", "Less"]
     },
     {
       "name": "123insight",
       "role": "Technical Architect",
       "timeline": ["Nov 2013 – Feb 2014"],
-      "summary": "123insight is an end-to-end manufacturing enterprise management solution that covers everything from quoting, CRM, sales, purchasing through to stock control, subcontracting, goods in/out and invoicing software system suitable for all manufacturing types and industries.",
+      "summary": "123insight is an end-to-end manufacturing enterprise management solution that covers everything from quoting, CRM, sales, and purchasing to stock control, subcontracting, goods in/out, and invoicing software systems suitable for all manufacturing types and industries.",
       "tags": ["all", "cybage"],
-      "responsibility": "",
+      "responsibility": "Helped team with project architecture, and trained the existing .Net team on AngularJS. Was not involved in the day-to-day activities of the project, and helped as a consultant when needed by the team.",
       "techStack": ["NodeJs", "TypeScript", "AngularJS", "Less"]
     },
     {
@@ -124,34 +124,43 @@
       "timeline": ["Nov 2011 – Dec 2012"],
       "summary": "TravelClick is the leading provider of revenue-generating solutions for hoteliers across the globe. Web 3.0 is the reservation solution for hotels. It provides tools to build websites for hotel reservations.",
       "tags": ["all", "cybage"],
-      "responsibility": "",
-      "techStack": ["JQuery", "YUI"]
+      "responsibility": "We inherited half built project from another vendor, as a lead I helped tea to understand existing design and extend it.",
+      "techStack": ["JQuery", "JQuery Mobile", "YUI"]
     },
     {
       "name": "GuestView, Rate360 and OrderManager",
       "role": "Project Manager",
       "timeline": ["Oct 2010 – Oct 2011"],
-      "summary": "TravelClick is the leading provider of revenue-generating solutions for hoteliers across the globe. GuestView, Rate360 and OrderManager are the suites of application catering to Guest management and Business Intelligence.",
+      "summary": "TravelClick is the leading provider of revenue-generating solutions for hoteliers across the globe. GuestView, Rate360, and OrderManager are the suites of application catering to Guest management and Business Intelligence.",
       "tags": ["all", "cybage"],
-      "responsibility": "",
+      "responsibility": "As a Technical Project manager, I was responsible for requirement discussions, design, and code reviews along with the delivery.",
       "techStack": ["ExtJS", "SASS", "Java"]
     },
     {
-      "name": "PricePosition and HotelConfig",
-      "role": "Project Lead and Developer",
-      "timeline": ["Feb 2006 – Jul 2007", "Nov 2008 - Oct 2010"],
-      "summary": "PricePosition and HotelConfig were the Business Intelligence products for Rubicon before been acquired by Travelclick and eventually replaced by GuestView, Rate360 and OrderManager.",
+      "name": "HotelConfig",
+      "role": "Project Lead",
+      "timeline": ["Nov 2008 - Oct 2010"],
+      "summary": "HotelConfig was part of the Business Intelligence products for Rubicon before being acquired by Travelclick and eventually replaced by GuestView, Rate360, and OrderManager.",
       "tags": ["all", "cybage"],
-      "responsibility": "",
+      "responsibility": "I worked on a perl cgi based web application to configure the reporting tool to show competitive pricing information captured by PricePosisition.",
+      "techStack": ["Perl", "JavaScript"]
+    },
+    {
+      "name": "PricePosition",
+      "role": "Developer",
+      "timeline": ["Feb 2006 – Jul 2007"],
+      "summary": "PricePosition was part of the Business Intelligence products for Rubicon before being acquired by Travelclick and eventually replaced by GuestView, Rate360, and OrderManager.",
+      "tags": ["all", "cybage"],
+      "responsibility": "Write web crawlers to scrape data from hotels, car rentals, and airline websites. As a team, we maintained 300+ crawlers written to the websites to extract various data points.",
       "techStack": ["Perl", "JavaScript"]
     },
     {
       "name": "Farelogix",
       "role": "Project Lead and Developer",
       "timeline": ["Jul 2007 – Oct 2008"],
-      "summary": "Farelogix is a leading provider of distribution technology and services for the travel industry. Its business model focuses on the delivery of solutions that lower the unit cost of distribution for both Travel Sellers and Travel Suppliers.",
+      "summary": "Farelogix is a leading provider of distribution technology and services for the travel industry. Its business model focuses on the delivery of solutions that lower the unit cost of distribution for both: Travel Sellers and Travel Suppliers.",
       "tags": ["all", "cybage"],
-      "responsibility": "",
+      "responsibility": "As a project and domain lead, I was responsible for requirement discussions, and code review apart from development.",
       "techStack": ["JavaScript", "XSLT"]
     }
   ]
