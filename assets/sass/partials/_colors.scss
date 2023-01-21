@@ -63,6 +63,8 @@ $shamrock: #2dca73;
   --project-selector-text: #{$catskillWhite};
   --project-card-header: #{$blueLagoon};
   --project-card-text: #{$catskillWhite};
+  --project-link: #{$blueLagoon};
+  --project-link-hover: #{$tePapaGreen};
 
   --footer-border: #{$regentGray};
   --footer-contact-hover: #{lighten(saturate($tePapaGreen, 100%), 10%)};

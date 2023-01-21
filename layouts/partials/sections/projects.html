@@ -24,10 +24,23 @@
           </div>
         </div>
         <div class="card__body">
-          <p>{{.summary}}</p>
-          {{if isset . "link"}}
-          <a href="{{.link}}" target="_blank">Details</a>
-          {{end}}
+          <div class="project__summry">
+            <p>{{.summary}}</p>
+            {{if isset . "link"}}
+            <a href="{{.link}}" target="_blank">Details</a>
+            {{end}}
+          </div>
+          <div class="project__responsibility">
+            <span>{{.responsibility}}</span>
+          </div>
+          <div class="project__tech-stack">
+            <span>Technologies:</span>
+            <ul>
+              {{range .techStack}}
+              <li>{{.}}</li>
+              {{end}}
+            </ul>
+          </div>
         </div>
       </article>
       {{end}}

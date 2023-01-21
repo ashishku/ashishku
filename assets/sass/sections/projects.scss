@@ -69,6 +69,7 @@
   }
 
   &__card {
+    justify-content: center;
     position: relative;
     width: 100%;
 
@@ -83,7 +84,7 @@
       transition: all 0.5s ease-out 0ms, width 1ms ease 0s;
 
       @media only screen and (max-width: 739px) {
-        max-width: 100%;
+        max-width: 90%;
       }
 
       .card__head {
@@ -112,8 +113,33 @@
         }
       }
 
-      &:hover {
-        box-shadow: 3px 3px 3px 3px var(--card-box-shadow);
+      &__summry {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          align-self: flex-end;
+          color: var(--project-link);
+          margin-bottom: 0.5em;
+
+          &:hover {
+            color: var(--project-link-hover);
+          }
+        }
+      }
+
+      &__tech-stack,
+      &__responsibility {
+        border-top: black 1px solid;
+        padding: 0.75em 0;
+      }
+
+      &__tech-stack {
+        ul {
+          margin: 0.5em 0;
+          padding-inline-start: 1.5em;
+          list-style-type: circle;
+        }
       }
     }
   }

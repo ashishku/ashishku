@@ -72,4 +72,4 @@ function onResize() {
 }
 
 window.addEventListener("load", onLoad);
-window.addEventListener("resize", onResize);
+window.addEventListener("resize", throttle(onResize, 500));
