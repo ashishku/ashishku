@@ -1,4 +1,5 @@
 $axolotl: #466d49;
+$blueLagoon: #008890;
 $catskillWhite: #e5e9f2;
 $oxfordBlue: #3c4858;
 $regentGray: #8392a5;
@@ -56,6 +57,12 @@ $shamrock: #2dca73;
 
   --experience-circle-text: #{$catskillWhite};
   --experience-company-text: #{$axolotl};
+
+  --project-selector-background: #{$tePapaGreen};
+  --project-selector-selected: #{$blueLagoon};
+  --project-selector-text: #{$catskillWhite};
+  --project-card-header: #{$blueLagoon};
+  --project-card-text: #{$catskillWhite};
 
   --footer-border: #{$regentGray};
   --footer-contact-hover: #{lighten(saturate($tePapaGreen, 100%), 10%)};

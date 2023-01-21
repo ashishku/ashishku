@@ -11,6 +11,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
+      .skill {
+        margin: 1.5em;
+        min-height: 155px;
+        min-width: 300px;
+      }
     }
   }
 }

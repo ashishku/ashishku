@@ -1,0 +1,141 @@
+{
+  "sectionTitle": "Projects",
+  "company": [
+    {
+      "filter": "all",
+      "name": "All"
+    },
+    {
+      "filter": "tarana",
+      "name": "Tarana Wireless"
+    },
+    {
+      "filter": "sincro",
+      "name": "Sincro, an Ansira company"
+    },
+    {
+      "filter": "cdk",
+      "name": "CDK Global"
+    },
+    {
+      "filter": "miotweb",
+      "name": "MIOTWEB Technologies"
+    },
+    {
+      "filter": "cybage",
+      "name": "Cybage Software Pvt. Ltd."
+    }
+  ],
+  "projects": [
+    {
+      "tags": ["all", "tarana"],
+      "name": "Operator Portal",
+      "role": "Technical Architect & Lead",
+      "timeline": ["July 2021 -"],
+      "summary": "",
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "tags": ["all", "tarana"],
+      "name": "Device UI",
+      "role": "Technical Architect & Lead",
+      "timeline": ["Jul 2021 -"],
+      "summary": "",
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "tags": ["all", "sincro", "cdk"],
+      "name": "NextGen Config",
+      "role": "Project Lead",
+      "timeline": ["Sep 2016 - Jun 2021"],
+      "summary": "NextGen is the next generation websites platform for CDK global based on nodejs. Config team builds tools for the platform which help end users build their websites",
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "name": "BodyLog 365 LifeSmart",
+      "role": "Consultant",
+      "link": "https://smarthealth.mylifesmart.net.au/#/login",
+      "timeline": ["Jun 2015 - Nov 2015"],
+      "summary": "App to show reports and charts for Lifesmart Health devices. App also allows user to interact and share reports directly with doctor and pharmacist using Video and text chat.",
+      "responsibility": "Helped team design Angular JS base framework for",
+      "techStack": [],
+      "tags": ["all", "miotweb"]
+    },
+    {
+      "name": "My LifeSmart",
+      "role": "Freelance Consultant",
+      "link": "https://mylifesmart.net.au/",
+      "timeline": ["Nov 2015 - Dec 2015"],
+      "summary": "Website for LifeSmart. Allows the user to buy products and app subscriptions.",
+      "responsibility": "Helped team to build a custom static site builder using markdown",
+      "techStack": [],
+      "tags": ["all", "miotweb"]
+    },
+    {
+      "name": "Cybage Technology Group",
+      "role": "Technical Architect",
+      "timeline": ["May 2012 - Sep 2016"],
+      "summary": "Group of architects manage technical hierarchy to guide and mentor a virtual team of developers.",
+      "tags": ["all", "cybage"],
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "name": "MIS",
+      "role": "Technical Architect",
+      "timeline": ["Sep 2014 - Sep 2016"],
+      "summary": "Migrate existing internal MIS application to the new technology stack.",
+      "tags": ["all", "cybage"],
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "name": "123insight",
+      "role": "Technical Architect",
+      "timeline": ["Nov 2013 – Feb 2014"],
+      "summary": "123insight is an end-to-end manufacturing enterprise management solution that covers everything from quoting, CRM, sales, purchasing through to stock control, subcontracting, goods in/out and invoicing software system suitable for all manufacturing types and industries.",
+      "tags": ["all", "cybage"],
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "name": "Web 3.0",
+      "role": " Technical Architect",
+      "timeline": ["Nov 2011 – Dec 2012"],
+      "summary": "TravelClick is the leading provider of revenue-generating solutions for hoteliers across the globe. Web 3.0 is the reservation solution for hotels. It provides tools to build websites for hotel reservations.",
+      "tags": ["all", "cybage"],
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "name": "GuestView, Rate360 and OrderManager",
+      "role": "Project Manager",
+      "timeline": ["Oct 2010 – Oct 2011"],
+      "summary": "TravelClick is the leading provider of revenue-generating solutions for hoteliers across the globe. GuestView, Rate360 and OrderManager are the suites of application catering to Guest management and Business Intelligence.",
+      "tags": ["all", "cybage"],
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "name": "PricePosition and HotelConfig",
+      "role": "Project Lead and Developer",
+      "timeline": ["Feb 2006 – Jul 2007", "Nov 2008 - Oct 2010"],
+      "summary": "PricePosition and HotelConfig were the Business Intelligence products for Rubicon before been acquired by Travelclick and eventually replaced by GuestView, Rate360 and OrderManager.",
+      "tags": ["all", "cybage"],
+      "responsibility": "",
+      "techStack": []
+    },
+    {
+      "name": "Farelogix",
+      "role": "Project Lead and Developer",
+      "timeline": ["Jul 2007 – Oct 2008"],
+      "summary": "Farelogix is a leading provider of distribution technology and services for the travel industry. Its business model focuses on the delivery of solutions that lower the unit cost of distribution for both Travel Sellers and Travel Suppliers.",
+      "tags": ["all", "cybage"],
+      "responsibility": "",
+      "techStack": []
+    }
+  ]
+}

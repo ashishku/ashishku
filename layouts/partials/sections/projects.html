@@ -11,15 +11,19 @@
     </div>
     <section class="projects__card">
       {{range .projects}}
-      <article class="project" {{range .tags}} data-{{.}} {{end}}>
-        <div class="project--head">
-          <h3 class="project__card--project-name">{{.name}}</h3>
-          <div>
-            <span class="project--role">{{.role}}</span>
-            <span class="project--timeline">{{.timeline}}</span>
+      <article class="project card" {{range .tags}} data-{{.}} {{end}}>
+        <div class="card__head">
+          <h3 class="project--title">{{.name}}</h3>
+          <div class="project--subtitle">
+            <span class="project--profile">{{.role}}</span>
+            <span class="project--timeline">
+              {{range .timeline}}
+              <span>{{.}}</span>
+              {{ end }}
+            </span>
           </div>
         </div>
-        <div class="project--body">
+        <div class="card__body">
           <p>{{.summary}}</p>
           {{if isset . "link"}}
           <a href="{{.link}}" target="_blank">Details</a>
